@@ -1,0 +1,21 @@
+{
+  "name": "ff0080",
+  "displayName": "FF0080",
+  "description": "https://github.com/VMPYRC/FF0080",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "FF0080",
+        "uiTheme": "hc-black",
+        "path": "./themes/FF0080-color-theme.json"
+      }
+    ]
+  }
+}
