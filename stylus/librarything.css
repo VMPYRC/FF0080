@@ -1,0 +1,154 @@
+/* ==UserStyle==
+@name           FF0080 - LibraryThing.com
+@namespace      github.com/openstyles/stylus
+@version        2025.09.19
+@description    Black x white x pink theme
+@author         VMPYRC
+==/UserStyle== */
+@-moz-document domain("librarything.com") {
+  .lt1nav.has_subnav {
+    --lt-subnav-background-color: #000000;
+  }
+  .lt2 {
+    /* Black Backgrounds */
+    --lt-background-color: #000000;
+    --lt-brown-color: #000000;
+    --lt-button-default-background-color: #000000;
+    --lt-button-menu-default-background-color: #000000;
+    --lt-sidebar-tan: #000000;
+    --lt-subnav-background-color: #000000;
+    --lt-table-row-color: #000000;
+    /* Grey Text */
+    --lt-text-grey-color: #999999;
+    /* White Text */
+    --lt-brownlogo-color: #ffffff;
+    --lt-maintabs-textcolor: #ffffff;
+    --lt-text-color: #ffffff;
+    --lt-text-dark-color: #ffffff;
+    /* Hover */
+    --lt-box-hover-color: #222222;
+    --lt-brown-hover-color: #222222;
+    --lt-button-default-background-hover-color: #ff0080;
+    --lt-menu-hover-background-color: #222222;
+    --lt-sidenav-hover-background-color: #222222;
+    --lt-table-row-hover-color: #222222;
+    --lt-warning-background-color-light: #333333;
+    --lt-warning-background-color-lighter: #444444;
+    --lt-warning-background-color: #222222;
+    --xlt-table-row-hover-color: #222222;
+    /* Links */
+    --lt-link-color-light: #33bbbb;
+    --lt-link-color-light_defunct: #33bbbb;
+    --lt-link-color-strong: #00ffff;
+    --lt-link-hover-color: #ffffff;
+    --lt-link-visited-color: #ff0080;
+    /* Borders */
+    --lt-border-color-subnav: #ffffff;
+    --lt-border-color: #222222;
+    --lt-button-default-border-hover-color: #ffffff;
+    --lt-button-primary-border-color: #ffffff;
+    --lt-button-primary-border-hover-color: #ffffff;
+    --lt-menu-separator: #ffffff;
+    --lt-menusection-separator: #ffffff;
+    --lt-sidebar-separator: #ffffff;
+    --lt-talk-msg-unread-border-background-color: #000000;
+    --lt-talk-msg-unread-border-left-color: #33bbbb;
+    /* Reds */
+    --lt-logo-letter-color: #ffffff;
+    --lt-logo-shadow-color: ##ff0080aa;
+    --lt-red-color-control-foreground: #ff0080;
+    --lt-red-color: #ff0080;
+    --lt-red-light-color: #ff0080;
+    --lt-red-logo-color: #ff0080;
+    /* Talk Messages */
+    --lt-talk-msg-read-color: #222222;
+    --lt-talk-msg-unread-color: #555555;
+    /* Buttons */
+    --lt-button-primary-background-color: #33bbbb;
+    --lt-button-primary-background-hover-color: #00ffff;
+    /* Form Control */
+    --lt-form-control-accent-color: #ff0080;
+    --lt-form-control-background-color: #ffffff;
+    --lt-form-control-color: #ffffff;
+    /* Other */
+    --lt-gradient-section-color: #222222;
+    --lt-lightbox-overlay-color: #222222aa;
+    --lt-tan-selected-subnav: #222222;
+    --lt-tan-selected: #222222;
+  }
+  .permalink,
+  body > div#content,
+  body > div.content,
+  html body.catalogpage .content *,
+  html.lt2 {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+  #homediv .area > h2,
+  .cancelButton,
+  .card_list .card,
+  .chart-dumptruck,
+  .displayBar,
+  .displayBar,
+  .form-control,
+  .form-control::placeholder,
+  .infocard,
+  .library-field,
+  .lt2 .ui-accordion .ui-accordion-header,
+  .lt2 .ui-widget-content,
+  .menuBuilderMenu,
+  .mr_content_container,
+  .table > thead:first-child > tr:first-child > th,
+  .toolpad,
+  textarea {
+    background-color: #000000 !important;
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
+  }
+  .ff #quickSearchbox,
+  #quickSearchbox {
+    background-color: #000000;
+    box-shadow: none;
+    color: #ffffff;
+  }
+  #mastsearch input {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    box-shadow: none;
+    color: #ffffff;
+    height: 1.6em;
+    width: 200px;
+  }
+  .lt2_sidebar .greenbox:last-child,
+  .sidebar_group:last-child {
+    border: 1px solid #ffffff;
+  }
+  .lt2 .btn.btn-danger,
+  .lt2 a.btn.btn-danger {
+    background-color: #ff0000;
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  .lt2 .btn.btn-danger:hover,
+  .lt2 a.btn.btn-danger:hover {
+    background-color: #ff000055;
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  .lt2 #talktable td.star i,
+  .lt2 #talktable tr.body:hover td.star i {
+    color: #555555;
+  }
+  .btn,
+  .sidebar_group .sidebar_menu_item.selected,
+  .sidebar_group a.sidebar_menu_item.selected,
+  .sidenav_accordion a.selected,
+  h2 {
+    color: #ffffff;
+  }
+  .LT_LB2020_wrapper {
+    border: 1px solid #ffffff;
+    height: 900px !important;
+    width: 900px !important;
+  }
+}
