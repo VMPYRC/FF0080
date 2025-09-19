@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Global
 @namespace      github.com/openstyles/stylus
-@version        2025.09.05
+@version        2025.09.19
 @description    Various changes for all sites
 @author         VMPYRC
 ==/UserStyle== */
@@ -11,11 +11,13 @@
   a:link {
     color: #3399bb !important;
     text-decoration: underline !important;
+    text-shadow: none !important;
   }
   a:visited,
   a:active {
     color: #ff0080 !important;
     text-decoration: underline !important;
+    text-shadow: none !important;
   }
   a:hover {
     color: #9900ff !important;
@@ -42,6 +44,6 @@
     padding: 2px;
     border-radius: 5px;
     word-wrap: break-word;
-    white-space: pre-wrap;
+    /* white-space: pre-wrap; */
   }
 }
