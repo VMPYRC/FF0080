@@ -20,6 +20,7 @@
     --lt-sidebar-tan: #000000;
     --lt-subnav-background-color: #000000;
     --lt-table-row-color: #000000;
+    --lt-menu-background-color: #000000;
     /* Grey Text */
     --lt-text-grey-color: #999999;
     /* White Text */
@@ -79,11 +80,6 @@
     --lt-form-control-accent-color: #ff0080;
     --lt-form-control-background-color: #ffffff;
     --lt-form-control-color: #ffffff;
-    /* Other */
-    --lt-gradient-section-color: #222222;
-    --lt-lightbox-overlay-color: #222222aa;
-    --lt-tan-selected-subnav: #222222;
-    --lt-tan-selected: #222222;
     /* TriviaThing */
     --lt-trivia-darkblue-border-color: #000000;
     --lt-trivia-darkblue-color: #000000;
@@ -91,6 +87,19 @@
     --lt-trivia-orange-color: #ff5500;
     --lt-trivia-tan-color-background: #000000;
     --lt-trivia-tan-color-trans-background: #000000;
+    /* Survey */
+    --survey-color-text: #ffffff;
+    --survey-color-text-muted: #999999;
+    --survey-color-border: #ffffff;
+    --survey-color-background: #000000;
+    --survey-color-background-alt: #222222;
+    --survey-color-primary: #ff0080;
+    --survey-color-primary-hover: #33bbbb;
+    /* Other */
+    --lt-gradient-section-color: #222222;
+    --lt-lightbox-overlay-color: #222222aa;
+    --lt-tan-selected-subnav: #222222;
+    --lt-tan-selected: #222222;
   }
   .ltbtn-islabel .ltbtn-content,
   .ltbtn-selected .ltbtn-content,
@@ -98,10 +107,12 @@
   .sidebar_group .sidebar_menu_item.selected,
   .sidebar_group a.sidebar_menu_item.selected,
   .sidenav_accordion a.selected,
+  a:hover,
   body:not(.lt1-5) h1,
   h2 {
     color: #ffffff !important;
   }
+  .lt2 #talktable td.ignore i,
   .lt2 #talktable td.star i,
   .lt2 #talktable tr.body:hover td.star i {
     color: #555555;
@@ -112,6 +123,7 @@
   .LT_LB_overlay_white {
     background-color: #222222aa !important;
   }
+  .lt2 #talktable tr.chrome td,
   .lt2_sidebar .greenbox:last-child,
   .sidebar_group:last-child {
     border: 1px solid #ffffff;
@@ -142,12 +154,13 @@
     border-color: #ffffff;
     color: #ffffff;
   }
+  #LT_LB,
   #homediv .area > h2,
-  .lt_altsidebar .sidebar_group,
-  table.pageBar,
-  .lt2_subnav,
+  #lt_filter_band,
+  #masthead,
   .cancelButton,
   .card_list .card,
+  .cat_catrow .toolpad > :not(:last-child),
   .chart-dumptruck,
   .displayBar,
   .displayBar,
@@ -155,21 +168,20 @@
   .form-control::placeholder,
   .infocard,
   .library-field,
-  .lt2 .ui-accordion .ui-accordion-header,
-  .lt2 .ui-widget-content,
-  .mr_content_container,
-  .table > thead:first-child > tr:first-child > th,
-  .toolpad,
-  td.toolpad,
-  .cat_catrow .toolpad > :not(:last-child),
-  .lt_filter_band,
-  #lt_filter_band,
   .lt2 .lt_pillbox > *,
   .lt2 .lt_pillbox > a,
-  #LT_LB,
+  .lt2 .ui-accordion .ui-accordion-header,
+  .lt2 .ui-widget-content,
+  .lt2_subnav,
+  .lt_altsidebar .sidebar_group,
+  .lt_filter_band,
+  .mr_content_container,
   .poems h3,
-  #masthead,
+  .table > thead:first-child > tr:first-child > th,
+  .toolpad,
   div.search,
+  table.pageBar,
+  td.toolpad,
   textarea {
     background: #000000 !important;
     border: 1px solid #ffffff !important;
