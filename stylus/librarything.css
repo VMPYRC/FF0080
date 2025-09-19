@@ -6,10 +6,12 @@
 @author         VMPYRC
 ==/UserStyle== */
 @-moz-document domain("librarything.com") {
-  .lt1nav.has_subnav {
-    --lt-subnav-background-color: #000000;
-  }
-  .lt2 {
+  .lt1nav.has_subnav,
+  .lt2,
+  :root,
+  html,
+  html.lt2,
+  body {
     /* Black Backgrounds */
     --lt-background-color: #000000;
     --lt-brown-color: #000000;
@@ -22,9 +24,11 @@
     --lt-text-grey-color: #999999;
     /* White Text */
     --lt-brownlogo-color: #ffffff;
+    --lt-logo-letter-color: #ffffff;
     --lt-maintabs-textcolor: #ffffff;
     --lt-text-color: #ffffff;
     --lt-text-dark-color: #ffffff;
+    --lt-white-color: #ffffff;
     /* Hover */
     --lt-box-hover-color: #222222;
     --lt-brown-hover-color: #222222;
@@ -40,6 +44,7 @@
     --lt-link-color-light: #33bbbb;
     --lt-link-color-light_defunct: #33bbbb;
     --lt-link-color-strong: #00ffff;
+    --lt-link-color: #33bbbb;
     --lt-link-hover-color: #ffffff;
     --lt-link-visited-color: #ff0080;
     /* Borders */
@@ -54,12 +59,16 @@
     --lt-talk-msg-unread-border-background-color: #000000;
     --lt-talk-msg-unread-border-left-color: #33bbbb;
     /* Reds */
-    --lt-logo-letter-color: #ffffff;
     --lt-logo-shadow-color: ##ff0080aa;
     --lt-red-color-control-foreground: #ff0080;
     --lt-red-color: #ff0080;
     --lt-red-light-color: #ff0080;
     --lt-red-logo-color: #ff0080;
+    --lt-warning-border-color: #ff0080;
+    /* Greens */
+    --lt-btn-success-background-color: #448844;
+    --lt-reorder-background-color-lighter: #448844aa;
+    --lt-success-background-color-lighter: #448844aa;
     /* Talk Messages */
     --lt-talk-msg-read-color: #222222;
     --lt-talk-msg-unread-color: #555555;
@@ -75,16 +84,68 @@
     --lt-lightbox-overlay-color: #222222aa;
     --lt-tan-selected-subnav: #222222;
     --lt-tan-selected: #222222;
+    /* TriviaThing */
+    --lt-trivia-darkblue-border-color: #000000;
+    --lt-trivia-darkblue-color: #000000;
+    --lt-trivia-darkblue-hover-color: #000000;
+    --lt-trivia-orange-color: #ff5500;
+    --lt-trivia-tan-color-background: #000000;
+    --lt-trivia-tan-color-trans-background: #000000;
   }
+  .ltbtn-islabel .ltbtn-content,
+  .ltbtn-selected .ltbtn-content,
+  .rating i.empty,
+  .sidebar_group .sidebar_menu_item.selected,
+  .sidebar_group a.sidebar_menu_item.selected,
+  .sidenav_accordion a.selected,
+  body:not(.lt1-5) h1,
+  h2 {
+    color: #ffffff !important;
+  }
+  .lt2 #talktable td.star i,
+  .lt2 #talktable tr.body:hover td.star i {
+    color: #555555;
+  }
+  .rating i {
+    color: #ff0080;
+  }
+  .LT_LB_overlay_white {
+    background-color: #222222aa !important;
+  }
+  .lt2_sidebar .greenbox:last-child,
+  .sidebar_group:last-child {
+    border: 1px solid #ffffff;
+  }
+  .lt2 .alert-plain {
+    color: #ffffff;
+    font-size: 0.8em;
+  }
+  .ltbtn-selected .ltbtn-content {
+    background: #ff0080;
+    color: #ffffff !important;
+  }
+  #lt_catalog_list tr.even td,
+  #lt_catalog_list tr.odd td,
+  .catalog td,
   .permalink,
   body > div#content,
   body > div.content,
-  html body.catalogpage .content *,
   html.lt2 {
-    background-color: #000000 !important;
-    color: #ffffff !important;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  .addbooks .book:hover,
+  .ipe:hover,
+  .ipeHover,
+  .tablehead td:hover {
+    background-color: #222222 !important;
+    border-color: #ffffff;
+    color: #ffffff;
   }
   #homediv .area > h2,
+  .lt_altsidebar .sidebar_group,
+  table.pageBar,
+  .lt2_subnav,
   .cancelButton,
   .card_list .card,
   .chart-dumptruck,
@@ -96,12 +157,34 @@
   .library-field,
   .lt2 .ui-accordion .ui-accordion-header,
   .lt2 .ui-widget-content,
-  .menuBuilderMenu,
   .mr_content_container,
   .table > thead:first-child > tr:first-child > th,
   .toolpad,
+  td.toolpad,
+  .cat_catrow .toolpad > :not(:last-child),
+  .lt_filter_band,
+  #lt_filter_band,
+  .lt2 .lt_pillbox > *,
+  .lt2 .lt_pillbox > a,
+  #LT_LB,
+  .poems h3,
+  #masthead,
+  div.search,
   textarea {
+    background: #000000 !important;
+    border: 1px solid #ffffff !important;
+    color: #ffffff !important;
+  }
+  body #bookframe .booklist h1 {
     background-color: #000000 !important;
+    border: 1px solid #ffffff !important;
+    color: #ffffff;
+    padding: 5px;
+  }
+  #tabs .sitenav_item.selected,
+  .ltbtn-selected .ltbtn-inner-box,
+  body.show_subnav #tabs .sitenav_item.selected {
+    background: #ff0080 !important;
     border: 1px solid #ffffff !important;
     color: #ffffff !important;
   }
@@ -109,7 +192,8 @@
   #quickSearchbox {
     background-color: #000000;
     box-shadow: none;
-    color: #ffffff;
+    color: #ffffff !important;
+    height: 2em;
   }
   #mastsearch input {
     background-color: #000000;
@@ -119,9 +203,10 @@
     height: 1.6em;
     width: 200px;
   }
-  .lt2_sidebar .greenbox:last-child,
-  .sidebar_group:last-child {
-    border: 1px solid #ffffff;
+  #lt2_sitemessage {
+    background-color: #ff0080;
+    border-color: #ffffff;
+    color: #ffffff;
   }
   .lt2 .btn.btn-danger,
   .lt2 a.btn.btn-danger {
@@ -135,16 +220,61 @@
     border-color: #ffffff;
     color: #ffffff;
   }
-  .lt2 #talktable td.star i,
-  .lt2 #talktable tr.body:hover td.star i {
-    color: #555555;
+  spoiler::before {
+    background: #999999 !important;
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+    color: #ffffff !important;
+    content: none;
   }
-  .btn,
-  .sidebar_group .sidebar_menu_item.selected,
-  .sidebar_group a.sidebar_menu_item.selected,
-  .sidenav_accordion a.selected,
-  h2 {
+  spoiler,
+  spoiler a:hover {
+    background: #999999 !important;
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+    color: #999999 !important;
+  }
+  spoiler.spoiled {
+    background: #999999 !important;
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+    color: #ffffff !important;
+  }
+  .menuBuilderMenu a:hover {
+    background-color: #999999 !important;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+  }
+  .clipbox_expander {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    box-shadow: none;
     color: #ffffff;
+  }
+  .clipbox_expanderB.textonly {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    box-shadow: none;
+    color: #ffffff;
+    top: -10px;
+  }
+  div.WorkStats {
+    background: #000000;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 12px;
+  }
+  .ltbtn-content,
+  .ltbtn-top-shadow {
+    background-color: #222222;
+    border: 1px solid #ffffff;
+    color: #ffffff !important;
+    padding: 1em;
+  }
+  .menuBuilderMenu a {
+    background-color: #000000;
+    color: #ffffff !important;
+    font-size: 1.2em;
   }
   .LT_LB2020_wrapper {
     border: 1px solid #ffffff;
