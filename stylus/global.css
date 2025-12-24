@@ -1,12 +1,13 @@
 /* ==UserStyle==
 @name           Global
 @namespace      github.com/openstyles/stylus
-@version        2025.09.19
+@version        2025.12.24
 @description    Various changes for all sites
 @author         VMPYRC
 ==/UserStyle== */
 @-moz-document url-prefix("https://")
 {
+  /* Links */
   a,
   a:link {
     color: #3399bb !important;
@@ -23,6 +24,7 @@
     color: #9900ff !important;
     text-decoration: underline !important;
   }
+  /* Dividers */
   hr {
     background-image: linear-gradient(to right, #ff0080 0%, #00ffff 100%);
     border: 0;
@@ -30,6 +32,7 @@
     text-align: center;
     width: 80%;
   }
+  /* Quotes, Code, Etc. */
   blockquote {
     border: 2px solid #9900ff;
     border-radius: 5px;
@@ -45,5 +48,8 @@
     border-radius: 5px;
     word-wrap: break-word;
     /* white-space: pre-wrap; */
+  }
+  element {
+    text-shadow: none !important;
   }
 }
