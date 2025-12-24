@@ -1,0 +1,91 @@
+/* ==UserStyle==
+@name           FF0080 - openlibrary.org
+@namespace      github.com/openstyles/stylus
+@version        2025.09.05
+@description    Black x white x pink theme
+@author         VMPYRC
+==/UserStyle== */
+@-moz-document domain("openlibrary.org") {
+  body {
+    background-color: #111;
+    font-family: "Noto Serif";
+    color: #fff;
+  }
+  #test-body-mobile {
+    background-color: #222;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  html,
+  p,
+  li {
+    color: #fff;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #ff7799 !important;
+  }
+  /* Images */
+  div#contentBody img {
+    border: 1px solid #000;
+  }
+  .header-bar .header-dropdown .account__icon {
+    border: 1px solid #fff;
+  }
+  /* Tables */
+  table#pageHistory th,
+  table.changeHistory th,
+  table#pageHistory td,
+  table.changeHistory td {
+    border-bottom: 1px solid #fff;
+    background-color: #222;
+    color: #fff;
+    padding: 1px;
+  }
+  /* Links */
+  a,
+  a:link {
+    color: #3399bb !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  a:visited,
+  a:active {
+    color: #ff0080 !important;
+    text-decoration: underline !important;
+    text-shadow: none !important;
+  }
+  a:hover {
+    color: #9900ff !important;
+    text-decoration: underline !important;
+  }
+  /* Dividers */
+  hr {
+    background-image: linear-gradient(to right, #ff0080 0%, #00ffff 100%);
+    border: 0;
+    height: 2px;
+    text-align: center;
+    width: 80%;
+  }
+  /* Quotes, Code, Etc. */
+  blockquote {
+    border: 2px solid #9900ff;
+    border-radius: 5px;
+    margin: 1em 1px;
+    padding: 0.5em 5px;
+    padding-left: 10px;
+  }
+  code,
+  pre,
+  tt {
+    border: 2px solid #ff0080;
+    padding: 2px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    /* white-space: pre-wrap; */
+  }
+}
