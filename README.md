@@ -9,6 +9,7 @@
 
 - Requirement: [Stylus](https://github.com/openstyles/stylus)
 - [Global / All Websites](stylus/global.css)
+- [mathiashjelm.gitlab.io/arcanum/](stylus/arcanum.css)
 - [Bookwyrm.social](stylus/bookwyrm-social.css)
 - [Codeberg.org](stylus/codeberg.css) - based on the [gitea-dark](https://codeberg.org/Codeberg-Infrastructure/forgejo/src/branch/codeberg-12/web_src/css/themes/theme-gitea-dark.css) theme
 - [LibraryThing.com](stylus/librarything.css)

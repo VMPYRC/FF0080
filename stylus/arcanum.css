@@ -1,0 +1,41 @@
+/* ==UserStyle==
+@name           FF0080 - mathiashjelm.gitlab.io/arcanum/
+@namespace      github.com/openstyles/stylus
+@version        2026.01.31
+@description    Black x white x pink theme
+@author         VMPYRC
+==/UserStyle== */
+@-moz-document url-prefix("https://mathiashjelm.gitlab.io/arcanum/")
+{
+  button:disabled,
+  button.disabled,
+  button.disabled:hover,
+  button.disabled:active,
+  .task-btn.disabled,
+  .task-btn.disabled:hover,
+  .task-btn.disabled:active,
+  .text-button:disabled,
+  .darkmode .spellButton[data-v-bcd6f81c]:disabled,
+  .darkmode input[type="button"]:disabled,
+  .darkmode button:disabled,
+  .darkmode .task-btn.disabled,
+  .darkmode .task-btn.disabled:hover,
+  .darkmode .task-btn.disabled:active,
+  .darkmode .text-button:disabled {
+    background-color: #ff000055;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  button,
+  .darkmode .spellButton[data-v-bcd6f81c],
+  .darkmode input[type="button"],
+  .darkmode button,
+  .darkmode .text-button {
+    background-color: #00ff0055;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  body.darkmode {
+    color: #fff;
+  }
+}
